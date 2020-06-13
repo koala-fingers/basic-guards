@@ -1,4 +1,4 @@
-![.NET Core](https://github.com/koala-fingers/basic-guards/workflows/.NET%20Core/badge.svg?event=push)
+![Build](https://github.com/koala-fingers/basic-guards/workflows/.NET%20Core/badge.svg?event=push)
 
 # Basic guard clauses
 
