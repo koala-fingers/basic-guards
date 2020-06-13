@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Madoff.Test" Description="Rules for test projects of Madoff" ToolsVersion="15.0">
+  <Include Path="CodeAnalysis.ruleset" Action="Default" />
+  <Rules AnalyzerId="Stylecop.Analyzers"  RuleNamespace="Stylecop.Analyzers" >
+    <Rule Id="CA1707" Action="None" /><!-- Disable IdentifiersShouldNotContainUnderscores rule. -->
+    <Rule Id="SA1633" Action="None" /><!-- The file header is missing or not located. -->
+  </Rules>
+</RuleSet>

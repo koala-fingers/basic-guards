@@ -12,7 +12,7 @@
         /// <param name="propertyName">Name of the tested property.</param>
         /// <returns>The string value if valid, otherwise throws an argument exception.</returns>
         public static string ThrowIfNullOrWhitespace(this string stringValue, string propertyName)
-        { 
+        {
             if (string.IsNullOrWhiteSpace(stringValue) || string.IsNullOrEmpty(stringValue))
             {
                 throw new System.ArgumentException(propertyName);
