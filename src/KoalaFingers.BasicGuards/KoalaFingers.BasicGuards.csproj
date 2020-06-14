@@ -10,11 +10,11 @@
 
   <PropertyGroup>
     <Description>Basic guards clauses for validations.</Description>
-    <Version>1.0.0-beta</Version>
+    <Version>1.0.0-beta2</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/koala-fingers/basic-guards</PackageProjectUrl>
     <PackageTags>C#, Guards, NetCore</PackageTags>
-    <PackageReleaseNotes>Add basic guard to validate if string is null or whitespace.</PackageReleaseNotes>
+    <PackageReleaseNotes>Fixed CI/CD configurations.</PackageReleaseNotes>
     <IsPackable>true</IsPackable>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
