@@ -18,17 +18,15 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
       - name: Setup .NET Core @ Latest
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 3.1.101
-        env:
-          NUGET_AUTH_TOKEN: ${{secrets.NUGET_ACCESS_KEY}}
-
       - name: Install dependencies
         run: dotnet restore
       - name: Build
         run: dotnet build --configuration Release --no-restore BasicGuards.sln
       - name: Push nuget package
+        env:
+          NUGET_AUTH_TOKEN: ${{secrets.NUGET_ACCESS_KEY}}
         run: dotnet nuget push src/KoalaFingers.BasicGuards/bin/Release/*.nupkg --api-key $NUGET_AUTH_TOKEN --source https://api.nuget.org/v3/index.json
