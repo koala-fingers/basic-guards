@@ -30,6 +30,5 @@ jobs:
         run: dotnet restore
       - name: Build
         run: dotnet build --configuration Release --no-restore BasicGuards.sln
-
-      - name: Push package
-        run: dotnet nuget push ./src/KoalaFingers.BasicGuards/bin/Release/*.nupkg --skip-duplicate --no-symbols true -k $NUGET_AUTH_TOKEN -s https://api.nuget.org/v3/index.json
+      - name: Push nuget package
+        run: dotnet nuget push src/KoalaFingers.BasicGuards/bin/Release/*.nupkg --api-key $NUGET_AUTH_TOKEN --source https://api.nuget.org/v3/index.json
