@@ -5,11 +5,20 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <CodeAnalysisRuleSet>../../config/CodeAnalysis.ruleset</CodeAnalysisRuleSet>
+    <Authors>safv12</Authors>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Class1.cs" />
-  </ItemGroup>
+  <PropertyGroup>
+    <Description>Basic guards clauses for validations.</Description>
+    <Version>1.0.0-beta</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/koala-fingers/basic-guards</PackageProjectUrl>
+    <PackageTags>C#, Guards, NetCore</PackageTags>
+    <PackageReleaseNotes>Add basic guard to validate if string is null or whitespace.</PackageReleaseNotes>
+    <IsPackable>true</IsPackable>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
