@@ -1,4 +1,4 @@
-![.Net Core](https://github.com/koala-fingers/basic-guards/workflows/.NET%20Core/badge.svg?event=push) ![Nuget package](https://github.com/koala-fingers/basic-guards/workflows/Nuget%20package/badge.svg?event=push)
+![Build](https://github.com/koala-fingers/basic-guards/workflows/Build/badge.svg) ![Nuget Package](https://github.com/koala-fingers/basic-guards/workflows/Nuget%20Package/badge.svg) ![Nuget](https://img.shields.io/nuget/v/KoalaFingers.BasicGuards)
 
 # Basic guard clauses
 
