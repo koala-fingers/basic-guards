@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KoalaFingers.BasicGuards</name>
+    </assembly>
+    <members>
+        <member name="T:KoalaFingers.BasicGuards.Extensions.GuardExtensions">
+            <summary>
+            Guard clauses extensions.
+            </summary>
+        </member>
+        <member name="M:KoalaFingers.BasicGuards.Extensions.GuardExtensions.ThrowIfNullOrWhitespace(System.String,System.String)">
+            <summary>
+            Validates if the provided string value is not null or whitespace.
+            </summary>
+            <param name="stringValue">String value to validate.</param>
+            <param name="propertyName">Name of the tested property.</param>
+            <returns>The string value if valid, otherwise throws an argument exception.</returns>
+        </member>
+    </members>
+</doc>

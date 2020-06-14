@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KoalaFingers.BasicGuards.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:KoalaFingers.BasicGuards.Tests.Extensions.GuarExtensionsUnitTests.GuardExtensionsTests">
+            <summary>
+            Tests the ThrowIfNullOrWhitespace method in the GuardExtensions file.
+            </summary>
+        </member>
+    </members>
+</doc>
