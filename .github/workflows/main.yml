@@ -1,4 +1,4 @@
-name: Nuget pakcage
+name: Nuget package
 
 on:
   push:
@@ -11,23 +11,25 @@ on:
 
 jobs:
   build:
+
     runs-on: ubuntu-18.04
     name: Update NuGet package
-    steps:
 
+    steps:
       - name: Checkout repository
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Setup .NET Core @ Latest
         uses: actions/setup-dotnet@v1
         with:
-          source-url: https://www.nuget.org/packages/KoalaFingers.BasicGuards/
+          dotnet-version: 3.1.101
         env:
-          NUGET_AUTH_TOKEN: ${{secrets.NUGET_ACCESS_TOKEN}}
+          NUGET_AUTH_TOKEN: ${{secrets.NUGET_ACCESS_KEY}}
 
-      - name: Build solution and generate NuGet package
-        run: |
-          dotnet build -c Release -o out
+      - name: Install dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --configuration Release --no-restore BasicGuards.sln
 
-      - name: Push generated package to GitHub registry
+      - name: Push package
         run: dotnet nuget push ./src/KoalaFingers.BasicGuards/out/*.nupkg --skip-duplicate --no-symbols true
