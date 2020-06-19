@@ -1,7 +1,7 @@
-﻿namespace KoalaFingers.BasicGuards.Tests.Extensions.GuarExtensionsUnitTests
+﻿namespace BasicGuards.Tests.Extensions.GuarExtensionsUnitTests
 {
     using System;
-    using KoalaFingers.BasicGuards.Extensions;
+    using BasicGuards.Extensions;
     using Xunit;
 
     /// <summary>

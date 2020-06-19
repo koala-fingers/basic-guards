@@ -1,4 +1,4 @@
-﻿namespace KoalaFingers.BasicGuards.Extensions
+﻿namespace BasicGuards.Extensions
 {
     /// <summary>
     /// Guard clauses extensions.

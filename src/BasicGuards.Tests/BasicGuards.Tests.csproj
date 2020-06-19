@@ -31,6 +31,6 @@
     <Folder Include="Extensions\GuarExtensionsUnitTests\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KoalaFingers.BasicGuards\KoalaFingers.BasicGuards.csproj" />
+    <ProjectReference Include="..\BasicGuards\BasicGuards.csproj" />
   </ItemGroup>
 </Project>
