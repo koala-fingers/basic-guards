@@ -1,4 +1,4 @@
-![Build](https://github.com/koala-fingers/basic-guards/workflows/Build/badge.svg) ![Nuget Package](https://github.com/koala-fingers/basic-guards/workflows/Nuget%20Package/badge.svg) ![Nuget](https://img.shields.io/nuget/v/KoalaFingers.BasicGuards)
+![Build](https://github.com/koala-fingers/basic-guards/workflows/Build/badge.svg) ![Nuget Package](https://github.com/koala-fingers/basic-guards/workflows/Nuget%20Package/badge.svg) ![Nuget](https://img.shields.io/nuget/v/BasicGuards)
 
 # Basic guard clauses
 
