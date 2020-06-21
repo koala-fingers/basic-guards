@@ -10,11 +10,11 @@
 
   <PropertyGroup>
     <Description>Basic guards clauses for validations.</Description>
-    <Version>1.0.0-beta3</Version>
+    <Version>1.0.0-beta4</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/koala-fingers/basic-guards</PackageProjectUrl>
     <PackageTags>C#, Guards, NetCore</PackageTags>
-    <PackageReleaseNotes>Remove KoalaFingers from namespace.</PackageReleaseNotes>
+    <PackageReleaseNotes>Added ThrowIfNull guard.</PackageReleaseNotes>
     <IsPackable>true</IsPackable>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
