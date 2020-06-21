@@ -33,5 +33,20 @@
             // Assert
             Assert.Same(input, result);
         }
+
+        [Fact]
+        public void Given_NotNullErrorMessage_When_CallIsNullOrWhitespace_Then_ShouldAssignTheMessageToTheException()
+        {
+            // Arrange
+            var errorMessage = "My custom error message";
+            string systemUnderTest = null;
+
+            // Act
+            var exception = Record.Exception(
+                () => systemUnderTest.ThrowIfNullOrWhitespace(nameof(systemUnderTest), errorMessage));
+
+            // Assert
+            Assert.Contains(errorMessage, exception.Message, StringComparison.InvariantCulture);
+        }
     }
 }
